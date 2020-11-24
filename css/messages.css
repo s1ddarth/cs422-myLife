@@ -1,0 +1,253 @@
+
+ 
+ body {
+  background: #DAD299;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #B0DAB9, #DAD299);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #B0DAB9, #DAD299); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+ }
+
+ * {
+  scrollbar-width: thin;
+  scrollbar-color: #eee;
+ }
+*::-webkit-scrollbar {
+  width: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #eee;
+  border-radius: 20px;
+  border: 3px solid #eee;
+}
+ 
+ h1 {
+     text-align: center;
+     color: white;
+ }
+
+
+ .container {
+     margin: 60px auto;
+     background: #fff;
+     padding: 0;
+     border-radius: 7px;
+     height: 758px;
+ }
+
+.rightColumn {
+  height: 758px;
+}
+.leftColumn {
+  height: 758px;
+}
+ 
+.conversations {
+  max-height: 650px;
+  overflow: auto;
+}
+
+ .profile-image {
+     width: 50px;
+     height: 50px;
+     border-radius: 25px;
+ }
+
+ .settings-tray {
+     background:#eeeeee ;
+     padding: 10px 15px;
+     border-radius: 7px;
+ }
+
+ .settings-tray i {
+     margin-top: 10px;
+     font-size: 25px;
+     color: grey;
+     margin-left: 14px;
+     float: right;
+     transition: .3s;
+  }
+
+  .settings-tray--right {
+      display: inline;
+      float: right;
+  }
+
+  i:hover {
+      color: #74b9ff;
+      cursor: pointer;
+  }
+
+
+  .search-box {
+      background: #fafafa;
+      padding: 10px 13px;
+  }
+
+  .search-box .input-wrapper {
+      background: white;
+      border-radius: 40px;   
+  }
+
+  .serach-box i {
+      color: grey;
+      vertical-align: middle;
+      margin-left: 7px;
+  }
+
+
+  input {
+      border: none;
+      border-radius: 40px;
+      width: 80%;
+  }
+
+  input::placeholder {
+      color: #e3e3e3;
+      font-weight: 300;
+      margin-left: 20px;
+  }
+
+  input:focus {
+      outline: none;
+  }
+
+  .friend-drawer {
+    padding: 10px 15px;
+    display: flex;
+    background: #ffffff;
+    vertical-align: baseline;
+  }
+
+  .friend-drawer--grey {
+      background: #eeeeee;
+  }
+
+  .friend-drawer .text {
+      margin-left: 12px;
+      width: 70%;
+
+  }
+
+  .friend-drawer h6 {
+    margin-top: 6px;
+    margin-bottom: 0;
+  }
+
+  .friend-drawer .time {
+    color: grey;
+  }
+
+  .friend-drawer--onhover:hover {
+      background: #74b9ff;
+      cursor: pointer;
+      transition: .3s;
+
+  }
+
+  .friend-drawer--onhover:hover .text {
+    color: #ffffff;
+}
+
+   hr {
+    margin: 5px auto;
+    width: 60%;
+  }
+
+
+  .chat-panel {
+    max-height: 597px;
+    overflow: auto;
+  }
+
+  .chat-bubble {
+    padding: 10px 14px;
+    background: #eee;
+    margin: 10px 30px;
+    border-radius: 9px;
+    position: relative;
+    animation: fadeIn 1s ease-in;
+  }
+
+  .chat-bubble--blue {
+    background: #74b9ff;
+    color: #fff;
+  }
+
+
+  .chat-bubble::after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-bottom: 0;
+    margin-top: -10px;
+  }
+
+ .chat-bubble--left::after {
+    left: 0;
+    border-right-color: #eee;
+    border-left: 0;
+    margin-left: -17px;
+  }
+
+  .chat-bubble--right::after {
+    right: 0;
+    border-left-color: #74b9ff;
+    border-right: 0;
+    margin-right: -17px;
+  }
+
+  .textBoxRow {
+    bottom: 0;
+    position: absolute;
+  }
+
+  .chat-box-tray {
+      background: #eee;
+      display: flex;
+      align-items: center;
+      padding: 10px 15px;
+      /* margin-top: 19px; */
+      bottom: 0;
+      width: 760px;
+  }
+
+  .chat-box-tray input {
+    margin: 0 20px;
+    padding: 6px 2px;
+    width: 650px;
+  }
+
+  .chat-box-tray i {
+    color: grey;
+    font-size: 30px;
+    vertical-align: middle;
+    transition: .3s;
+  }
+
+  /* .chat-box-tray i:last-of-type {
+    margin-left: 15px;
+  } */
+
+  .chat-box-tray i:hover {
+    color: #74b9ff;
+  }
+
+
+  .group-footer {
+    justify-content: center;
+  }
+
+  .added-members-feedback {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .addMemberSpan {
+    margin-left: 100px;
+  }
